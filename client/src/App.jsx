@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Analytics from './pages/Analytics'
+import BulkShorten from './pages/BulkShorten'
 
 function App() {
   return (
@@ -12,12 +13,14 @@ function App() {
           <NavLink to="/" className="navbar-brand">⚡ SnipURL</NavLink>
           <div className="navbar-links">
             <NavLink to="/" className={({isActive}) => isActive ? 'active' : ''}>Home</NavLink>
+            <NavLink to="/bulk" className={({isActive}) => isActive ? 'active' : ''}>Bulk</NavLink>
             <NavLink to="/dashboard" className={({isActive}) => isActive ? 'active' : ''}>Dashboard</NavLink>
           </div>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/bulk" element={<BulkShorten />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/analytics/:shortId" element={<Analytics />} />
         </Routes>
