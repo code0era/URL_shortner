@@ -24,7 +24,7 @@ function Home() {
       })
       if (data.error) { setError(data.error) }
       else { setResult(data); setUrl(''); setAlias(''); setExpiry('') }
-    } catch { setError('Failed to shorten URL') }
+    } catch (err) { setError('Failed to shorten URL: ' + (err.message || 'Network error')) }
     setLoading(false)
   }
 
