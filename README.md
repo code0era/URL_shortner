@@ -1,3 +1,10 @@
+
+
+<img width="1920" height="1020" alt="Screenshot 2026-03-28 043743" src="https://github.com/user-attachments/assets/d76d92a1-5795-4511-8357-c179a0a0b023" />
+
+<img width="1920" height="1020" alt="Screenshot 2026-03-28 043752" src="https://github.com/user-attachments/assets/703fb6d6-f806-41d6-bb4d-b7cec87ef6ef" />
+
+
 # ⚡ SnipURL — URL Shortener | System Design
 
 > A full-stack MERN URL shortener with analytics, QR codes, and custom aliases.
