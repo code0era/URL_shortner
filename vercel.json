@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/s/:shortId", "destination": "/api/redirect/:shortId" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
