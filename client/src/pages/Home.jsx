@@ -42,7 +42,7 @@ function Home() {
     } catch { /* ignore */ }
   }
 
-  const shortUrl = result ? `${window.location.origin}/${result.shortId}` : ''
+  const shortUrl = result ? `${window.location.origin}/s/${result.shortId}` : ''
 
   return (
     <div>

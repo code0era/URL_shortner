@@ -28,7 +28,7 @@ function Dashboard() {
   }
 
   const copy = (shortId) => {
-    navigator.clipboard.writeText(`${window.location.origin}/${shortId}`)
+    navigator.clipboard.writeText(`${window.location.origin}/s/${shortId}`)
     setCopied(true)
     setTimeout(() => setCopied(false), 2500)
   }

@@ -22,7 +22,7 @@ function BulkShorten() {
   const copyAll = () => {
     const text = results
       .filter(r => r.shortId)
-      .map(r => `${window.location.origin}/${r.shortId}`)
+      .map(r => `${window.location.origin}/s/${r.shortId}`)
       .join('\n')
     navigator.clipboard.writeText(text)
     setCopied(true)
