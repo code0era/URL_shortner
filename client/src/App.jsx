@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Analytics from './pages/Analytics'
 import BulkShorten from './pages/BulkShorten'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/bulk" element={<BulkShorten />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/analytics/:shortId" element={<Analytics />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <footer className="footer">
